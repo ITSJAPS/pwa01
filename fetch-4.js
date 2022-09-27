@@ -5,17 +5,17 @@ let img2= document.getElementById("IdImg2");
 
 
 //Creamos un fetch con codigo de promesa pero simplificada
-fetch('imagenes/MazingerZ-1.png')
+fetch('imagenes/hos1.png')
 .then(resp=> resp.blob())
 .then(image =>{
     console.log(image);
-    
+
     //creamos instancia para imagen primera
     var imgPath1 = URL.createObjectURL(image);
     img1.src=imgPath1;
 });
 //fetch con codigo de promesa normal 
-fetch('imagenes/MazingerZ-2.png')
+fetch('imagenes/hos2.jpg')
 .then(resp =>{
     return resp.blob();
 })
